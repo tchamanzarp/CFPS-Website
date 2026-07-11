@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fall 2026 Events | CFPS Calendar</title>
+<meta name="description" content="The full CFPS Fall 2026 calendar: workshops, firm visits, case competitions, conferences, and socials. Filter by category. Chapter meetings every Thursday.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html"><img src="assets/cfps-logo.jpg" alt="Cougar Financial Planning Society logo"><span>CFPS</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a class="btn btn-red nav-join" href="https://docs.google.com/forms/d/1wTB0ihMj-Kgzq1SpuLEP19JdL2h6Zmb3PuTtYgaOBTk/viewform" target="_blank" rel="noopener">Join CFPS</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Fall 2026</span>
+      <h1 class="display">The semester, mapped out</h1>
+      <p class="lede">Workshops, firm visits, competitions, conferences, and socials. Chapter meetings run every Thursday, that is the main weekly touchpoint.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="note">Dates are tentative and get confirmed closer to each event. Anything marked Confirmed is locked in.</p>
+      <div class="spacer-sm"></div>
+      <div class="filters" role="group" aria-label="Filter events by category">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Social">Social</button>
+        <button class="filter-btn" data-filter="Prof Dev">Prof Dev</button>
+        <button class="filter-btn" data-filter="Chapter">Chapter</button>
+        <button class="filter-btn" data-filter="Corporate">Corporate</button>
+        <button class="filter-btn" data-filter="Competition">Competition</button>
+        <button class="filter-btn" data-filter="Conference">Conference</button>
+      </div>
+      <div id="eventsList"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <span class="eyebrow">Membership is open</span>
+      <h2 class="h2">Every event hits different as a member</h2>
+      <p>Members get the workshops, the firm visits, the competitions, and the socials. One form and the whole calendar is yours.</p>
+      <a class="btn btn-red btn-lg" href="https://docs.google.com/forms/d/1wTB0ihMj-Kgzq1SpuLEP19JdL2h6Zmb3PuTtYgaOBTk/viewform" target="_blank" rel="noopener">Fill out the membership form</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><img src="assets/cfps-logo.jpg" alt="Cougar Financial Planning Society logo"><span>CFPS</span></div>
+      <p class="blurb">The University of Houston student organization for financial planning, wealth management, and finance careers. Open to all majors.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/uh_cfps" target="_blank" rel="noopener">Instagram @uh_cfps</a></li>
+        <li><a href="https://www.linkedin.com/company/cougarfinancialplanningsociety" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:tcbenite@gmail.com">Sponsorship inquiries</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ready to join?</h4>
+      <p class="blurb">No interviews, no application. Fill out the membership form and you are in.</p>
+      <a class="btn btn-red" href="https://docs.google.com/forms/d/1wTB0ihMj-Kgzq1SpuLEP19JdL2h6Zmb3PuTtYgaOBTk/viewform" target="_blank" rel="noopener">Join CFPS</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; <span id="year"></span> Cougar Financial Planning Society · A nonprofit, tax exempt student organization · EIN 41-3308399 · Registered Student Organization at the University of Houston</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
